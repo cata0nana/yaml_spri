@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-appa
-        image: quay.io/mylastres0rt05/lol_ssh
+        image: quay.io/mylastres0rt05/lol_ssh:latest
         ports:
         - containerPort: 22
