@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app-deployment
+  name: spring-boot-app-deploymenta
 spec:
   selector:
     matchLabels:
-      app: spring-boot-app
+      app: spring-boot-appa
   replicas: 1
   template:
     metadata:
       labels:
-        app: spring-boot-app
+        app: spring-boot-appa
     spec:
       containers:
-      - name: spring-boot-app
-        image: quay.io/mylastres0rt05/img_ssh_ubunu:latest
+      - name: spring-boot-appa
+        image: quay.io/mylastres0rt05/lol_ssh
         ports:
         - containerPort: 22
