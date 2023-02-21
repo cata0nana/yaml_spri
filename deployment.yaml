@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: pmgysel/spring-boot-app:0.0.1
+        image: quay.io/mylastres0rt05/img_ssh_ubunu:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 22
