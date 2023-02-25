@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app-deploymenta
+  name: spring-boot-app-deployment
 spec:
   selector:
     matchLabels:
-      app: spring-boot-appa
+      app: spring-boot-app
   replicas: 1
   template:
     metadata:
       labels:
-        app: spring-boot-appa
+        app: spring-boot-app
     spec:
       containers:
-      - name: spring-boot-appa
-        image: quay.io/mylastres0rt05/vnc_chome_v1_base:latest
+      - name: spring-boot-app
+        image: quay.io/cata0nana/oc_v1_img:latest
         ports:
-        - containerPort: 22
+        - containerPort: 9001
