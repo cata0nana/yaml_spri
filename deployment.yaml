@@ -17,4 +17,4 @@ spec:
         image: quay.io/cata0nana/oc_v1_img:latest
         ports:
         - containerPort: 9001
-        command: ["/bin/sleep", "3650d"]
+        command: [ "/usr/bin/supervisord", "-n" , "-c","/etc/supervisor/supervisord.conf" ]
